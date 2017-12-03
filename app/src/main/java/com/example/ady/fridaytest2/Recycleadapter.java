@@ -57,7 +57,7 @@ public class Recycleadapter extends RecyclerView.Adapter<Recycleadapter.ViewHold
         holder.Author.setText(list.get(position).getAuthor());
         Glide.with(context)
                 .load(list.get(position).getM())
-                .thumbnail(0.001f)
+                .thumbnail(0.1f)
                 .into(holder.listimage);
 
         holder.linearLayout.setOnLongClickListener(new View.OnLongClickListener() {
